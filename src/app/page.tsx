@@ -1,17 +1,23 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center h-full gap-10 p-24">
-      <h1 className="text-3xl font-medium">
-        Velkommen til {'"'}How to sideprosjekt{'"'}
+    <div className=" bg-blue-300 min-h-screen">
+      <h1 className="text-center text-black text-5xl py-6">
+        Fies Hjemmeside
       </h1>
-
-      <p>
-        Om du vil ha oppgaver, les{" "}
-        <span className="bg-gray-200 font-mono py-1 px-2 rounded-md">
-          README.md
-        </span>
-        .
-      </p>
-    </main>
+      <p className="text-2xl py-6 px-6"> Jeg er en engasjert bioinformatikk student ved UiB. Dette er relevant om meg: </p>
+      <ul className="py-5">
+        <a href="/cv">
+          <li className="text-2xl bg-pink-300 px-6 py-4 w-96">
+            Trykk her for min: CV! 
+          </li>
+        </a>
+        <a href= "https://www.linkedin.com/connect-services/?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed">
+          <li className="text-2xl bg-green-300 px-6 py-4 w-96">
+            Trykk her for min: linkdin! 
+          </li>
+        </a>
+      </ul>
+    </div>
+    
   );
 }
